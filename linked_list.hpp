@@ -1,5 +1,5 @@
-#ifndef DOUBLY_LINKED_LIST_HPP
-#define DOUBLY_LINKED_LIST_HPP
+#ifndef LINKED_LIST_HPP
+#define LINKED_LIST_HPP
 
 
 //struct or class??
