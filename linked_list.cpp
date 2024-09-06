@@ -1,5 +1,5 @@
 #include <iostream>
-#include "doubly_linked_list.hpp"
+#include "linked_list.hpp"
 
 
 using namespace std;
