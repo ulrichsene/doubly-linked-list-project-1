@@ -25,6 +25,7 @@ class LinkedList
        int search(int value) const;
        void print_forward() const;
        void print_backward() const;
+       void print_grid() const;
        Node* get_head() const;
        Node* get_tail() const;
        int size() const;

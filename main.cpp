@@ -41,7 +41,7 @@ int main()
     bool quit = false;
 
 
-    while (!quit) {
+    /* while (!quit) {
         cout << "j";
 
 
@@ -58,6 +58,6 @@ int main()
         }
     }
 
-
+    */
     cout << "Exiting program!";
 }

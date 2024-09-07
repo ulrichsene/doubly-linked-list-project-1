@@ -1,4 +1,6 @@
 #include <iostream>
+#include <vector>
+#include <cmath>
 
 #include "linked_list.hpp"
 
@@ -186,4 +188,33 @@ int LinkedList::search(int index) const {
 
 
     return current->tree_data;
+}
+
+
+void LinkedList::print_grid() const {
+    vector<int> elements;
+    Node* iter = head;
+    while (iter != nullptr) {
+        elements.push_back(iter->tree_data);
+        iter = iter->next;
+    }
+
+    int n = elements.size();
+    int grid_size = ceil(sqrt(n));
+    vector<vector<int>> grid(grid_size, vector<int>(grid_size, -1));
+
+    for (int i = 0; i < n; ++i) {
+        grid[i / grid_size][i % grid_size] = elements[i];
+    }
+
+    for (int i = 0; i < grid_size; ++i) {
+        for (int j = 0; j < grid_size; ++j) {
+            if (grid[i][j] != -1) {
+                cout << grid[i][j] << "\t";
+            } else {
+                cout << "\t";
+            }
+        }
+        cout << endl;
+    }
 }
