@@ -61,6 +61,8 @@ int main()
     sharp.insert(5,11);
     sharp.insert(6,1);
 
+    sharp.print_forward(); 
+
     char i;
     bool quit = false;
 
