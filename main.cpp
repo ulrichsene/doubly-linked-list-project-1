@@ -1,9 +1,18 @@
 #include <iostream>
+#include <fstream> 
+
 #include <linked_list.hpp>
 
 using namespace std;
 
-int main() {
+int main() 
+{
+    //read the string from the file
+    fstream in_file("input.txt", ios::in); 
+    string input;
+    getline(in_file, input, '\0');
+    in_file.close();
+    
     LinkedList list;
 
 
