@@ -44,7 +44,7 @@ bool test_remove() {
 
    bool return1 = lst.remove(2);
    bool return2 = lst.remove(0);
-   bool return3 = lst.remove(4);
+   bool return3 = lst.remove(1);
 
 
    return true; 
@@ -52,9 +52,6 @@ bool test_remove() {
 
 int main(){
    test_remove(); 
-   LinkedList lst; 
-   lst.insert(0, 21);
-   lst.insert(1,7);
 
    return 0;
 }

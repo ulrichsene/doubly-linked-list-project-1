@@ -111,26 +111,32 @@ bool LinkedList::push_front(int value) {
 
 
 bool LinkedList::remove(int index) { 
+    // checks if index is a valid node 
     if(index < 0 || index > size()) {
-        cout << "boo! " << endl; 
+        cout << "This node cannot be found!! " << endl; 
         return false;
     }
+    // initialize counter for iter node
     int counter = 0; 
     Node* iter_front = head;
+    // while loop for possible cases
     while(counter <= index){
         if(counter == index){
+            // node at the end of the list
             if(iter_front->next == nullptr){
                 iter_front->prev->next = nullptr;
                 tail = iter_front->prev;
                 iter_front = nullptr;
                 delete iter_front; 
                 return true; 
+            // front of the list node being removed
             }else if (iter_front->prev == nullptr){
                 iter_front->next->prev = nullptr;
                 head = iter_front->next;
                 iter_front = nullptr;
                 delete iter_front;
                 return true; 
+            // node not connected to tail or head is removed
             }else{
                 iter_front->prev->next = iter_front->next;
                 iter_front->next->prev = iter_front->prev;
@@ -139,6 +145,7 @@ bool LinkedList::remove(int index) {
                 return true; 
             }
         }
+        // iterate through the list
         iter_front = iter_front->next;
         counter++; 
     }
