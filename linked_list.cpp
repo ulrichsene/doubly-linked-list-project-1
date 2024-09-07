@@ -90,25 +90,29 @@ int LinkedList::size() const
 
 void LinkedList::print_forward() const
 {
+    cout << "******************************************************" << endl;
    Node* iter = head;
        while (iter != nullptr) {
-           cout << iter -> tree_data << " ";
+           cout << " | " << iter -> tree_data << " | ";
            iter = iter -> next;
        }
-       cout << endl;
+       cout << endl; 
+       cout << "******************************************************" << endl;
 }
 
 
 void LinkedList::print_backward() const
 {
+   cout << "******************************************************" << endl;
    Node* iter = tail;
    if (iter == nullptr) {
    }
    while (iter != nullptr) {
-       cout << iter -> tree_data << " ";
+       cout << " | " << iter -> tree_data << " | " << endl;
        iter = iter -> prev;
    }
-   cout << endl;
+   cout << endl; 
+   cout << "******************************************************" << endl;
 }
 
 
@@ -167,7 +171,8 @@ bool LinkedList::remove(int index)
 }
 
 //Returns -1 if no node is found
-int LinkedList::search(int index) const {
+int LinkedList::search(int index) const 
+{
     Node* current = head;
 
 
@@ -191,7 +196,8 @@ int LinkedList::search(int index) const {
 }
 
 
-void LinkedList::print_grid() const {
+void LinkedList::print_grid() const 
+{
     vector<int> elements;
     Node* iter = head;
     while (iter != nullptr) {
