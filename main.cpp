@@ -67,33 +67,42 @@ int main()
     while (!quit) {
         cout << "Select a street based on the following list (You may also quit by inputting Q):\n" << endl;
 
-        cout << "A--Augusta\n";
-        cout << "I--Indiana\n";
-        cout << "M--Mission\n";
-        cout << "N--Nora\n";
-        cout << "S--Sharp\n";
-        cout << "S--Sinto\n" << endl;
+        cout << "1--Augusta\n";
+        cout << "2--Indiana\n";
+        cout << "3--Mission\n";
+        cout << "4--Nora\n";
+        cout << "5--Sharp\n";
+        cout << "6--Sinto\n" << endl;
 
         cin >> i;
 
 
         switch (i) {
-            case 'a':
-            case 'A':
+            case '1': //Augusta
+                streetPicked(augusta);
                 break;
-            case 'm':
-            case 'M':
+
+            case '2': //Indiana
+                streetPicked(indiana);
                 break;
-            case 'i':
-            case 'I':
+
+            case '3': //Mission
+                streetPicked(mission);
                 break;
-            case 'n':
-            case 'N':
+
+            case '4': //Nora
+                streetPicked(nora);
                 break;
-            case 's':
-            case 'S':
+
+            case '5': //Sharp
+                streetPicked(sharp);
                 break;
-            case 'q':
+
+            case '6': //Sinto
+                streetPicked(sinto);
+                break;
+
+            case 'q': //Quitting
             case 'Q':
                 quit = true;
                 break;
@@ -104,4 +113,11 @@ int main()
     }
 
     cout << "Exiting program!";
+}
+
+void streetPicked(LinkedList street) {
+    cout << "YOu picked augusta\n";
+
+
+    cout << "";
 }
