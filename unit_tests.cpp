@@ -135,7 +135,7 @@ bool test_search() {
 }
 
 
-int main()
+int main_test()
 {
    test_insert();
    test_remove(); 
