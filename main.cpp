@@ -86,6 +86,9 @@ int main()
 
             case '2': //Indiana
                 streetPicked(indiana);
+            case 'a':
+            case 'A':
+            
                 break;
 
             case '3': //Mission
