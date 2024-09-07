@@ -1,43 +1,40 @@
 #include <iostream>
 #include <fstream> 
 
-#include <linked_list.hpp>
+#include "linked_list.hpp"
 
 using namespace std;
 
 int main() 
 {
     // read the street data in from the file
-        fstream in_file("Indiana.csv", ios::in); 
+        fstream in_file("indiana.csv", ios::in); 
         string input;
         getline(in_file, input, '\0');
         in_file.close();
 
-        fstream in_file("Nora.csv", ios::in); 
-        getline(in_file, input, '\0');
+        fstream in_file1("nora.csv", ios::in); 
+        getline(in_file1, input, '\0');
         in_file.close();
         
-        fstream in_file("Augusta.csv", ios::in); 
-        getline(in_file, input, '\0');
+        fstream in_file2("augusta.csv", ios::in); 
+        getline(in_file2, input, '\0');
         in_file.close();
         
-        fstream in_file("Mission.csv", ios::in); 
-        getline(in_file, input, '\0');
+        fstream in_file3("mission.csv", ios::in); 
+        getline(in_file3, input, '\0');
         in_file.close();
         
-        fstream in_file("Sinto.csv", ios::in); 
-        getline(in_file, input, '\0');
+        fstream in_file4("sinto.csv", ios::in); 
+        getline(in_file4, input, '\0');
         in_file.close();
         
-        fstream in_file("Sharp.csv", ios::in); 
-        getline(in_file, input, '\0');
+        fstream in_file5("sharp.csv", ios::in); 
+        getline(in_file5, input, '\0');
         in_file.close();
 
 
-    LinkedList list;
-
-
-    char input;
+    char i;
     bool quit = false;
 
 
@@ -45,12 +42,12 @@ int main()
         cout << "j";
 
 
-        cin >> input;
+        cin >> i;
 
 
-        switch (input) {
+        switch (i) {
             case 'q':
-                quit == true;
+                quit = true;
                 break;
             default:
                 cout << "Invalid input--try again!!";
