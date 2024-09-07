@@ -19,16 +19,37 @@ int main()
     char i;
     bool quit = false;
 
+    while (!quit) {
+        cout << "Select a street based on the following list (You may also quit by inputting Q):\n" << endl;
 
-    /* while (!quit) {
-        cout << "j";
-
+        cout << "A--Augusta\n";
+        cout << "I--Indiana\n";
+        cout << "M--Mission\n";
+        cout << "N--Nora\n";
+        cout << "S--Sharp\n";
+        cout << "S--Sinto\n" << endl;
 
         cin >> i;
 
 
         switch (i) {
+            case 'a':
+            case 'A':
+                break;
+            case 'm':
+            case 'M':
+                break;
+            case 'i':
+            case 'I':
+                break;
+            case 'n':
+            case 'N':
+                break;
+            case 's':
+            case 'S':
+                break;
             case 'q':
+            case 'Q':
                 quit = true;
                 break;
             default:
@@ -37,6 +58,5 @@ int main()
         }
     }
 
-    */
     cout << "Exiting program!";
 }
