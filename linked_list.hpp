@@ -1,29 +1,24 @@
 #ifndef LINKED_LIST_HPP
 #define LINKED_LIST_HPP
 
-
-//struct or class??
-
-
-class Node {
+class Node 
+{
    public:
        Node(int value);
        Node();
-
 
        int tree_data;
        Node* next;
        Node* prev;
 };
 
-
-class LinkedList {
+class LinkedList 
+{
    private:
        Node* head;
        Node* tail;
    public:
        LinkedList();
-
 
        bool insert(int index, int value);
        bool remove(int index);
@@ -36,6 +31,5 @@ class LinkedList {
        bool is_empty() const;
        bool push_front(int value);
 };
-
 
 #endif

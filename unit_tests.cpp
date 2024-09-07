@@ -4,7 +4,8 @@
 
 using namespace std;
 
-bool test_insert() {
+bool test_insert() 
+{
    // set up
    LinkedList lst;
   
@@ -30,7 +31,8 @@ bool test_insert() {
    return true;
 }
 
-bool test_remove() {
+bool test_remove() 
+{
    // set up
    LinkedList lst;
    lst.insert(0, 10);
@@ -46,14 +48,15 @@ bool test_remove() {
    // validation
    assert(return1 == true);
    assert(return2 == true);
-   assert(return3 == false);
+   assert(return3 == true);
 
    // cleanup
    // deconstructor deletes dynamically allocated memory
    return true; 
 }
 
-bool test_size() {
+bool test_size() 
+{
    // set up
    LinkedList lst; // list with elements
    LinkedList lst2; // empty list
@@ -67,7 +70,9 @@ bool test_size() {
    // cleanup
    return true;
 }
-bool test_print_forward() {
+
+bool test_print_forward() 
+{
    // set up 
    LinkedList lst; 
    // execution
@@ -80,7 +85,8 @@ bool test_print_forward() {
    return true;
 }
 
-bool test_print_backward() {
+bool test_print_backward() 
+{
    // set up 
    LinkedList lst; 
    // execution
@@ -93,7 +99,8 @@ bool test_print_backward() {
    return true;
 }
 
-bool test_push_front() {
+bool test_push_front() 
+{
    // set up 
    LinkedList lst;
    // execution
@@ -108,8 +115,14 @@ bool test_push_front() {
    return true;
 }
 
-int main(){
+int main()
+{
+   test_insert();
    test_remove(); 
+   test_size();
+   test_print_forward();
+   test_print_backward();
+   test_push_front();
 
    return 0;
 }
