@@ -163,3 +163,27 @@ bool LinkedList::remove(int index)
     }
     return true; 
 }
+
+//Returns -1 if no node is found
+int LinkedList::search(int index) const {
+    Node* current = head;
+
+
+    if (index < 0) {
+        return -1;
+    }
+
+
+    // Traverse the list
+    for (int i = 0; i < index; i++) {
+        //While still in list
+        if (current->next != nullptr) {
+            current = current->next;
+        } else {
+            return -1;
+        }
+    }
+
+
+    return current->tree_data;
+}

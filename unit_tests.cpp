@@ -114,6 +114,27 @@ bool test_push_front()
    return true;
 }
 
+bool test_search() {
+   LinkedList ll;
+
+
+   // Append some blocks to the linked list
+   ll.insert(0, 3);
+   ll.insert(1, 5);
+   ll.insert(0, 4);
+
+
+   assert(ll.search(1) == 3);
+
+
+   // Searching for a non-existent block
+   assert(ll.search(10) == -1);
+
+
+   return true;
+}
+
+
 int main()
 {
    test_insert();
@@ -122,6 +143,8 @@ int main()
    test_print_forward();
    test_print_backward();
    test_push_front();
+   test_search();
+
    cout << "All tests passed!" << endl;
 
    return 0;
