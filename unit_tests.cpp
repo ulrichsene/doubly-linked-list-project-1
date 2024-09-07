@@ -41,7 +41,7 @@ bool test_remove() {
    // execution
    bool return1 = lst.remove(2);
    bool return2 = lst.remove(0);
-   bool return3 = lst.remove(4);
+   bool return3 = lst.remove(1);
 
    // validation
    assert(return1 == true);
@@ -110,9 +110,6 @@ bool test_push_front() {
 
 int main(){
    test_remove(); 
-   LinkedList lst; 
-   lst.insert(0, 21);
-   lst.insert(1,7);
 
    return 0;
 }
