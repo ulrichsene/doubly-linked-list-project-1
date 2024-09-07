@@ -16,6 +16,51 @@ int main()
     indiana.insert(5,19);
     indiana.insert(6,14);
 
+    LinkedList nora; 
+    nora.insert(0,31);
+    nora.insert(1,15);
+    nora.insert(2,21);
+    nora.insert(3,28);
+    nora.insert(4,28);
+    nora.insert(5,16);
+    nora.insert(6,15);
+
+    LinkedList augusta; 
+    augusta.insert(0,24);
+    augusta.insert(1,19);
+    augusta.insert(2,18);
+    augusta.insert(3,14);
+    augusta.insert(4,15);
+    augusta.insert(5,12);
+    augusta.insert(6,9);
+
+    LinkedList mission; 
+    mission.insert(0,32);
+    mission.insert(1,20);
+    mission.insert(2,17);
+    mission.insert(3,25);
+    mission.insert(4,25);
+    mission.insert(5,18);
+    mission.insert(6,10);
+
+    LinkedList sinto;
+    sinto.insert(0,24);
+    sinto.insert(1,22);
+    sinto.insert(2,19);
+    sinto.insert(3,20);
+    sinto.insert(4,20);
+    sinto.insert(5,25);
+    sinto.insert(6,9);
+
+    LinkedList sharp;
+    sharp.insert(0,33);
+    sharp.insert(1,19);
+    sharp.insert(2,31);
+    sharp.insert(3,23);
+    sharp.insert(4,22);
+    sharp.insert(5,11);
+    sharp.insert(6,1);
+
     char i;
     bool quit = false;
 
