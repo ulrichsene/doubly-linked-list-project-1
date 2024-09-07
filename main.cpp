@@ -12,6 +12,8 @@ int main()
         string input;
         getline(in_file, input, '\0');
         in_file.close();
+        LinkedList indiana; 
+        cout << "input data: " << input << endl; 
 
         fstream in_file1("nora.csv", ios::in); 
         getline(in_file1, input, '\0');

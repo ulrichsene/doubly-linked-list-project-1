@@ -19,6 +19,7 @@ class LinkedList
        Node* tail;
    public:
        LinkedList();
+       LinkedList(vector<int> vec);
 
        bool insert(int index, int value);
        bool remove(int index);
