@@ -123,6 +123,7 @@ int main()
    test_print_forward();
    test_print_backward();
    test_push_front();
+   cout << "All tests passed!" << endl;
 
    return 0;
 }
