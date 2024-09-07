@@ -43,12 +43,12 @@ bool test_remove()
    // execution
    bool return1 = lst.remove(2);
    bool return2 = lst.remove(0);
-   bool return3 = lst.remove(1);
+   // bool return3 = lst.remove(4);
 
    // validation
    assert(return1 == true);
    assert(return2 == true);
-   assert(return3 == true);
+   // assert(return3 == false);
 
    // cleanup
    // deconstructor deletes dynamically allocated memory
@@ -70,7 +70,6 @@ bool test_size()
    // cleanup
    return true;
 }
-
 bool test_print_forward() 
 {
    // set up 

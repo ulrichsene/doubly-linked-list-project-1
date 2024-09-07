@@ -1,4 +1,5 @@
 #include <iostream>
+
 #include "linked_list.hpp"
 
 using namespace std;
@@ -109,7 +110,7 @@ void LinkedList::print_backward() const
 }
 
 
-bool LinkedList::push_front(int value) 
+bool LinkedList::push_front(int value)
 {
     Node* new_node = new Node;
     new_node->next = head;
