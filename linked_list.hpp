@@ -1,6 +1,8 @@
 #ifndef LINKED_LIST_HPP
 #define LINKED_LIST_HPP
 
+#include <vector>
+
 class Node 
 {
    public:
@@ -19,7 +21,6 @@ class LinkedList
        Node* tail;
    public:
        LinkedList();
-       LinkedList(vector<int> vec);
 
        bool insert(int index, int value);
        bool remove(int index);

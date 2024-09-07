@@ -28,19 +28,6 @@ LinkedList :: LinkedList()
    tail = nullptr;
 }
 
-LinkedList :: LinkedList(vector<int> vec){
-	head = nullptr;
-    for (int value : vec) {
-        Node* new_node = new Node(value);
-        if (head == nullptr) {
-            head = new_node;
-        } else {
-            new_node -> next = head;
-            head = new_node;
-        }
-    }
-}
-
 
 bool LinkedList::insert(int index, int value) 
 {
