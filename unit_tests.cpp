@@ -37,11 +37,24 @@ bool test_insert() {
 
 bool test_remove() {
    LinkedList lst;
-   lst.insert(1, 10);
+   lst.insert(0, 10);
    lst.insert(1, 20);
    lst.insert(2, 30);
+   lst.insert(3, 100);
 
-
-   bool return1 = lst.remove(1);
+   bool return1 = lst.remove(2);
    bool return2 = lst.remove(0);
-   bool return3 = lst.remove(2);
+   bool return3 = lst.remove(4);
+
+
+   return true; 
+}
+
+int main(){
+   test_remove(); 
+   LinkedList lst; 
+   lst.insert(0, 21);
+   lst.insert(1,7);
+
+   return 0;
+}

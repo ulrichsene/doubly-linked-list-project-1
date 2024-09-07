@@ -14,8 +14,6 @@ class Node {
        int tree_data;
        Node* next;
        Node* prev;
-      
-       ~Node();
 };
 
 
@@ -37,9 +35,6 @@ class LinkedList {
        int size() const;
        bool is_empty() const;
        bool push_front(int value);
-
-
-       ~LinkedList();
 };
 
 
