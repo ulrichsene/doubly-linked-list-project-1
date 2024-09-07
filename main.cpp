@@ -86,9 +86,6 @@ int main()
 
             case '2': //Indiana
                 streetPicked(indiana);
-            case 'a':
-            case 'A':
-            
                 break;
 
             case '3': //Mission
@@ -121,8 +118,31 @@ int main()
 }
 
 void streetPicked(LinkedList street) {
-    cout << "YOu picked augusta\n";
+    bool quit = false; 
+    while (quit != true)
+    {
+    cout << "You picked " << street << endl;
+    cout << "Select from the following list: " << endl; 
+    
+    cout << "1. Print tree data from west to east" << endl; 
+    cout << "2. Print tree data from east to west" << endl; 
+    cout << "3. Print the grid" << endl; 
+    cout << "4. Insert tree data" << endl; 
+    cout << "5. Remove tree data" << endl; 
+    cout << "6. Search for tree data" << endl; 
+    cout << "Quit" << endl; 
 
+    char c; 
+    cin >> c; 
+
+
+    switch (c) 
+    {
+        case 'q': //Quitting
+            case 'Q':
+                quit = true;
+                break;
+    }
 
     cout << "";
 }
