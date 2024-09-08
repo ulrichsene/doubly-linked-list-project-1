@@ -154,40 +154,40 @@ void streetPicked(LinkedList street)
             street.print_grid(); 
 
             break; 
-        // case '4': //insert
-        //     string i; 
-        //     cout << "Input the index of the node: " << endl;
-        //     cin >> i; 
-        //     string v; 
-        //     cout << "Input the value of the node: " << endl; 
-        //     cin >> v; 
-        //     int index = stoi(i);
-        //     int value = stoi(v);
-        //     street.insert(index, value); 
+        case '4': //insert
+            {string i; 
+            cout << "Input the index of the node: " << endl;
+            cin >> i; 
+            string v; 
+            cout << "Input the value of the node: " << endl; 
+            cin >> v; 
+            int index = stoi(i);
+            int value = stoi(v);
+            street.insert(index, value); 
 
-        //     cout << "Done!" << endl; 
+            cout << "Done!" << endl; 
 
-        //     break; 
-        // case '5': //remove
-        //     string i; 
-        //     cout << "Input the index of the node: " << endl;
-        //     cin >> i; 
-        //     int index = stoi(i);
-        //     street.remove(index); 
+            break; }
+        case '5': //remove
+            {string i; 
+            cout << "Input the index of the node: " << endl;
+            cin >> i; 
+            int index = stoi(i);
+            street.remove(index); 
 
-        //     cout << "Done!" << endl; 
+            cout << "Done!" << endl; 
 
-        //     break; 
-        // case '6': //search
-        //     string v;
-        //     cout << "Input the value of the node: " << endl; 
-        //     cin >> v; 
-        //     int value = stoi(v);
-        //     street.search(value); 
+            break; }
+        case '6': //search
+            {string v;
+            cout << "Input the index of the node: " << endl; 
+            cin >> v; 
+            int value = stoi(v);
+            street.search(value); 
 
-        //     cout << "Done!" << endl; 
+            cout << "Done!" << endl; 
 
-            break; 
+            break; }
         case 'q': //Quitting
         case 'Q':
                 quit = true;

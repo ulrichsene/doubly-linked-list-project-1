@@ -55,9 +55,11 @@ bool LinkedList::insert(int index, int value)
         if (new_node->next == nullptr) {
             tail = new_node;
         }
+        cout << "Success" <<endl; 
         return true;
    }
    else {
+        cout << "Failure : input valid index " << endl; 
        return false;
    }  
 }
@@ -199,7 +201,7 @@ int LinkedList::search(int index) const
         }
     }
 
-
+    cout << "The tree value is: " << current->tree_data << endl; 
     return current->tree_data;
 }
 

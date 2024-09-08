@@ -29,7 +29,7 @@ class LinkedList
 
        bool insert(int index, int value);
        bool remove(int index);
-       int search(int value) const;
+       int search(int index) const;
        void print_forward() const;
        void print_backward() const;
        void print_grid() const;
