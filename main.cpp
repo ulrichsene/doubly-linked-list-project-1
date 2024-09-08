@@ -78,6 +78,7 @@ int main()
         cout << "4--Nora\n";
         cout << "5--Sharp\n";
         cout << "6--Sinto\n" << endl;
+        cout << "7--Print grid" << endl;
 
         cin >> i;
 
@@ -107,6 +108,10 @@ int main()
                 streetPicked(sinto);
                 break;
 
+            case '7' : // print grid
+                print_grid(); 
+                break;
+
             case 'q': //Quitting
             case 'Q':
                 quit = true;
@@ -130,10 +135,9 @@ void streetPicked(LinkedList street)
     
     cout << "1. Print tree data from west to east" << endl; 
     cout << "2. Print tree data from east to west" << endl; 
-    cout << "3. Print the grid" << endl; 
-    cout << "4. Insert tree data" << endl; 
-    cout << "5. Remove tree data" << endl; 
-    cout << "6. Search for tree data" << endl; 
+    cout << "3. Insert tree data" << endl; 
+    cout << "4. Remove tree data" << endl; 
+    cout << "5. Search for tree data" << endl; 
     cout << "Quit" << endl; 
 
     char c; 
@@ -147,14 +151,10 @@ void streetPicked(LinkedList street)
 
             break;
         case '2': //print backward
-            street.print_backward(); 
-
-            break;
-        case '3': //print grid
-            street.print_grid(); 
+            street.print_backward();
 
             break; 
-        case '4': //insert
+        case '3': //insert
             {string i; 
             cout << "Input the index of the node: " << endl;
             cin >> i; 
@@ -168,7 +168,7 @@ void streetPicked(LinkedList street)
             cout << "Done!" << endl; 
 
             break; }
-        case '5': //remove
+        case '4': //remove
             {string i; 
             cout << "Input the index of the node: " << endl;
             cin >> i; 
@@ -178,7 +178,7 @@ void streetPicked(LinkedList street)
             cout << "Done!" << endl; 
 
             break; }
-        case '6': //search
+        case '5': //search
             {string v;
             cout << "Input the index of the node: " << endl; 
             cin >> v; 
