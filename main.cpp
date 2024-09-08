@@ -2,7 +2,6 @@
 #include <fstream> 
 
 #include "linked_list.hpp"
-#include "linked_list.cpp"
 
 using namespace std;
 
@@ -64,8 +63,6 @@ int main()
     sharp.insert(5,11);
     sharp.insert(6,1);
 
-    sharp.print_forward(); 
-
     char i;
     bool quit = false;
 
@@ -77,8 +74,9 @@ int main()
         cout << "3--Mission\n";
         cout << "4--Nora\n";
         cout << "5--Sharp\n";
-        cout << "6--Sinto\n" << endl;
+        cout << "6--Sinto\n";
         cout << "7--Print grid" << endl;
+        cout << "Q--Quit" << endl; 
 
         cin >> i;
 
@@ -109,7 +107,7 @@ int main()
                 break;
 
             case '7' : // print grid
-                print_grid(); 
+                nora.print_grid(); 
                 break;
 
             case 'q': //Quitting

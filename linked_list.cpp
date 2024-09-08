@@ -55,7 +55,6 @@ bool LinkedList::insert(int index, int value)
         if (new_node->next == nullptr) {
             tail = new_node;
         }
-        cout << "Success" <<endl; 
         return true;
    }
    else {
