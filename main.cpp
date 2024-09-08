@@ -2,6 +2,7 @@
 #include <fstream> 
 
 #include "linked_list.hpp"
+#include "linked_list.cpp"
 
 using namespace std;
 
@@ -9,7 +10,7 @@ void streetPicked(LinkedList street);
 
 int main() 
 {
-    LinkedList indiana; 
+    LinkedList indiana("Indiana"); 
     indiana.insert(0,49);
     indiana.insert(1,16);
     indiana.insert(2,24);
@@ -18,7 +19,7 @@ int main()
     indiana.insert(5,19);
     indiana.insert(6,14);
 
-    LinkedList nora; 
+    LinkedList nora("Nora"); 
     nora.insert(0,31);
     nora.insert(1,15);
     nora.insert(2,21);
@@ -27,7 +28,7 @@ int main()
     nora.insert(5,16);
     nora.insert(6,15);
 
-    LinkedList augusta; 
+    LinkedList augusta("Augusta"); 
     augusta.insert(0,24);
     augusta.insert(1,19);
     augusta.insert(2,18);
@@ -36,7 +37,7 @@ int main()
     augusta.insert(5,12);
     augusta.insert(6,9);
 
-    LinkedList mission; 
+    LinkedList mission("Mission"); 
     mission.insert(0,32);
     mission.insert(1,20);
     mission.insert(2,17);
@@ -45,7 +46,7 @@ int main()
     mission.insert(5,18);
     mission.insert(6,10);
 
-    LinkedList sinto;
+    LinkedList sinto("Sinto");
     sinto.insert(0,24);
     sinto.insert(1,22);
     sinto.insert(2,19);
@@ -54,7 +55,7 @@ int main()
     sinto.insert(5,25);
     sinto.insert(6,9);
 
-    LinkedList sharp;
+    LinkedList sharp("Sharp");
     sharp.insert(0,33);
     sharp.insert(1,19);
     sharp.insert(2,31);
@@ -111,7 +112,7 @@ int main()
                 quit = true;
                 break;
             default:
-                cout << "Invalid input--try again!!";
+                cout << "Invalid input--try again!!\n";
                 break;
         }
     }
@@ -124,7 +125,7 @@ void streetPicked(LinkedList street)
     bool quit = false; 
     while (quit != true)
     {
-    cout << "You picked something!!" << endl;
+    cout << "You picked " << street.getName() << "!" << endl;
     cout << "Select from the following list: " << endl; 
     
     cout << "1. Print tree data from west to east" << endl; 

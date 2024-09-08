@@ -26,6 +26,14 @@ LinkedList :: LinkedList()
 {
    head = nullptr;
    tail = nullptr;
+   name = "Street";
+}
+
+LinkedList :: LinkedList(string streetName)
+{
+   head = nullptr;
+   tail = nullptr;
+   name = streetName;
 }
 
 
@@ -223,4 +231,8 @@ void LinkedList::print_grid() const
         }
         cout << endl;
     }
+}
+
+string LinkedList::getName() {
+    return name;
 }

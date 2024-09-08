@@ -2,6 +2,9 @@
 #define LINKED_LIST_HPP
 
 #include <vector>
+#include <string>
+
+using namespace std;
 
 class Node 
 {
@@ -19,8 +22,10 @@ class LinkedList
    private:
        Node* head;
        Node* tail;
+       string name;
    public:
        LinkedList();
+       LinkedList(string name);
 
        bool insert(int index, int value);
        bool remove(int index);
@@ -33,6 +38,7 @@ class LinkedList
        int size() const;
        bool is_empty() const;
        bool push_front(int value);
+       string getName();
 };
 
 #endif
