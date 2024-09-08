@@ -5,6 +5,8 @@
 
 using namespace std;
 
+void streetPicked(LinkedList street);
+
 int main() 
 {
     LinkedList indiana; 
@@ -117,11 +119,12 @@ int main()
     cout << "Exiting program!";
 }
 
-void streetPicked(LinkedList street) {
+void streetPicked(LinkedList street) 
+{
     bool quit = false; 
     while (quit != true)
     {
-    cout << "You picked " << street << endl;
+    cout << "You picked something!!" << endl;
     cout << "Select from the following list: " << endl; 
     
     cout << "1. Print tree data from west to east" << endl; 
@@ -138,11 +141,61 @@ void streetPicked(LinkedList street) {
 
     switch (c) 
     {
+        case '1': //print_forward
+            street.print_forward(); 
+
+            break;
+        case '2': //print backward
+            street.print_backward(); 
+
+            break;
+        case '3': //print grid
+            street.print_grid(); 
+
+            break; 
+        // case '4': //insert
+        //     string i; 
+        //     cout << "Input the index of the node: " << endl;
+        //     cin >> i; 
+        //     string v; 
+        //     cout << "Input the value of the node: " << endl; 
+        //     cin >> v; 
+        //     int index = stoi(i);
+        //     int value = stoi(v);
+        //     street.insert(index, value); 
+
+        //     cout << "Done!" << endl; 
+
+        //     break; 
+        // case '5': //remove
+        //     string i; 
+        //     cout << "Input the index of the node: " << endl;
+        //     cin >> i; 
+        //     int index = stoi(i);
+        //     street.remove(index); 
+
+        //     cout << "Done!" << endl; 
+
+        //     break; 
+        // case '6': //search
+        //     string v;
+        //     cout << "Input the value of the node: " << endl; 
+        //     cin >> v; 
+        //     int value = stoi(v);
+        //     street.search(value); 
+
+        //     cout << "Done!" << endl; 
+
+            break; 
         case 'q': //Quitting
-            case 'Q':
+        case 'Q':
                 quit = true;
+                break;
+        default:
+                cout << "Invalid input--try again!!";
                 break;
     }
 
     cout << "";
+}
 }
