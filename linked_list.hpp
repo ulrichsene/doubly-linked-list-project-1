@@ -22,8 +22,8 @@ class LinkedList
    private:
        Node* head;
        Node* tail;
-       string name;
    public:
+       string name;
        LinkedList();
        LinkedList(string name);
 

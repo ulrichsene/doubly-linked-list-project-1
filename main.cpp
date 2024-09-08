@@ -107,7 +107,18 @@ int main()
                 break;
 
             case '7' : // print grid
-                nora.print_grid(); 
+                cout << "Indiana: " << endl;
+                indiana.print_forward();
+                cout << "Nora: " << endl;
+                nora.print_forward();
+                cout << "Augusta: " << endl;
+                augusta.print_forward();
+                cout << "Mission: " << endl;
+                mission.print_forward();
+                cout << "Sinto: " << endl;
+                sinto.print_forward();
+                cout << "Sharp: " << endl;
+                sharp.print_forward();
                 break;
 
             case 'q': //Quitting
